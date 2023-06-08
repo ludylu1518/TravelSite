@@ -17,15 +17,101 @@
         <ul>
             <!-- li is a list item -->
             <!-- if parent is ol then numbered, if parent is ul then bullet point -->
-            <li>Japan</li>
-            <li>Italy</li>
-            <li>France</li>
-            <li>South Korea</li>
-            <li>Spain</li>
+            <!-- target blank open link in new tab -->
+            <li>    
+                <img src="./assets/japan.jpg" width="100"/>
+                <!-- anchors use href -->
+                <a href="https://www.japan.travel/en/us/"           target="_blank">Japan</a>
+            </li>
+            <li>
+                <!-- images use src -->
+                <img src="./assets/italy.jpg" width="100"/>
+                <a href="#" target="_blank">Italy</a>
+            </li>            
+            <li>
+                <img src="./assets/france.jpg" width="100"/>
+                <a href="#" target="_blank">France</a>
+            </li>
         </ul>
 
         <!-- anchor tag, write links -->
-        <a href="https://www.japan.travel/en/us/">Linkt to Japan Travel Site</a>
+        <a href="https://www.japan.travel/en/us/">Link to Japan Travel Site</a>
+        <!-- Dummy link -->
+        <br />
+        <a href="#">Dummy Link</a>
+        <!-- table Creates a table in HTML-->
+        <table>
+            <!-- create row with tr -->
+            <tr>
+                <!-- create header column in row use th -->
+                <th>Destination</th>
+                <th>Capital</th>
+                <th>Official Language</th>
+            </tr>
+            <tr>
+                <!-- table data use td, a piece of data in a row / column -->
+                <td>Japan</td>
+                <td>Tokyo</td>
+                <td>Japanese</td>
+            </tr>
+            <tr>
+                <!-- table data use td, a piece of data in a row / column -->
+                <td>Italy</td>
+                <td>Rome</td>
+                <td>Italian</td>
+            </tr>
+            <tr>
+                <!-- table data use td, a piece of data in a row / column -->
+                <td>France</td>
+                <td>Paris</td>
+                <td>French</td>
+            </tr>
+        </table>
+
+        <h1>Where do you want to go?</h1>
+        <!-- Creates a form (collect information from users) -->
+        <form>
+            <!-- input creates an input field -->
+            <input placeholder="Type the place you want to travel"/>
+
+            <input type="button" value="This is my button"/>
+
+            <br />
+            <!-- check box -->
+            <p>Select any that apply:</p>
+
+            <div>
+                <label for="japan">Japan</label>
+                <input type="checkbox" name="japan" id="japan"/>
+            </div>
+
+            <label for="italy">Italy</label>
+            <input type="checkbox" name="italy" id="italy"/>
+            <label for="france">France</label>
+            <input type="checkbox" name="france" id="france"/>
+
+            <br />
+            <!-- Drop down box -->
+            <p>What is your <span style="color: red;">favorite</span> travel location?</p>
+            <select>
+                <option value="beach">Beach</option>
+                <option value="mountains">Mountains</option>
+                <option value="city">City</option>
+            </select>
+
+            <br />
+            <textarea rows="10" cols="50">Tell me a bit about yourself 
+            </textarea>
+
+            <br />
+            <!-- submit button -->
+            <input type="submit" value="submit button"/>
+        </form>
+
+        <!-- Divs stand for divisions, segment html into chunks -->
+        <div>
+            <span></span>
+        </div>
 
     </body>
 </html>
